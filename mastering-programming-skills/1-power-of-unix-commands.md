@@ -27,9 +27,9 @@ shows the location of the command's executable file
 ### Useful commandline options:
     -a : list all instances of the command executable
 
-### Tips:
+#### Tips:
     return status of this command can be used to check if a command or
     a tool is installed on the computer or not
 
-### Hands-on:
+#### Hands-on:
     
