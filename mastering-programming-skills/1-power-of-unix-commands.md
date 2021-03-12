@@ -3,7 +3,7 @@
 ## ps
 lists the processes running on the computer
 
-### Useful switches:
+### Useful commandline options:
     -a : list processes of all users as well as the current user
     -c : show the process name without the full path
     -f : show full details about the processes
@@ -20,3 +20,16 @@ lists the processes running on the computer
     - locate the ps command file.
     - find the forefathers of the ps command you just ran.
 
+
+## which
+shows the location of the command's executable file
+
+### Useful commandline options:
+    -a : list all instances of the command executable
+
+### Tips:
+    return status of this command can be used to check if a command or
+    a tool is installed on the computer or not
+
+### Hands-on:
+    
