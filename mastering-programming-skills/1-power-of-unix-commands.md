@@ -1,6 +1,6 @@
 # Commands
 
-## ps
+## 1. ps
 lists the processes running on the computer
 
 #### Useful commandline options:
@@ -21,7 +21,7 @@ lists the processes running on the computer
     - find the forefathers of the ps command you just ran.
 
 
-## which
+## 2. which
 shows the location of the command's executable file
 
 #### Useful commandline options:
@@ -37,7 +37,7 @@ shows the location of the command's executable file
     - find if the git tool is installed on your computer
 
 
-## grep
+## 3. grep
  
 #### Useful commandline options:
 
@@ -46,7 +46,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## top/htop
+## 4. top/htop
  
 #### Useful commandline options:
 
@@ -55,7 +55,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## less
+## 5. less
  
 #### Useful commandline options:
 
@@ -64,7 +64,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## watch
+## 6. watch
  
 #### Useful commandline options:
 
@@ -73,7 +73,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## cat
+## 7. cat
  
 #### Useful commandline options:
 
@@ -82,7 +82,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## awks 
+## 8. awks 
  
 #### Useful commandline options:
 
@@ -91,7 +91,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## tee
+## 9. tee
  
 #### Useful commandline options:
 
@@ -100,7 +100,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## wc
+## 10. wc
  
 #### Useful commandline options:
 
@@ -109,7 +109,16 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## netcat 
+## 11. netcat/socat
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## 12. cut 
  
 #### Useful commandline options:
 
