@@ -1,4 +1,4 @@
-# Commands we learn
+# Commands to learn
     - awk
     - cat
     - echo
@@ -8,10 +8,3 @@
     - top/htop
     - watch
 
-## ps
-### Activities
-
-
-## awk
-### Activities
-#### 1. 
