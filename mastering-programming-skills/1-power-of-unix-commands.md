@@ -3,17 +3,17 @@
 ## ps
 lists the processes running on the computer
 
-### Useful commandline options:
+#### Useful commandline options:
     -a : list processes of all users as well as the current user
     -c : show the process name without the full path
     -f : show full details about the processes
     -r : sort by CPU usage
     -m : sort by menory usage
 
-### Tips:
+#### Tips:
     - use 'ps -e' by default 
 
-### Hands-on:
+#### Hands-on:
     - try listing all processes that belong to the root.
     - try listing all processes that your current bash terminal 
       has started.
