@@ -24,7 +24,7 @@ lists the processes running on the computer
 ## which
 shows the location of the command's executable file
 
-### Useful commandline options:
+#### Useful commandline options:
     -a : list all instances of the command executable
 
 #### Tips:
@@ -32,4 +32,87 @@ shows the location of the command's executable file
     a tool is installed on the computer or not
 
 #### Hands-on:
-    
+    - list out all instances of 'vi' commands are installed on your
+      computer
+    - find if the git tool is installed on your computer
+
+
+## grep
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## top/htop
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## less
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## watch
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## cat
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## awks 
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## tee
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## wc
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## netcat 
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
