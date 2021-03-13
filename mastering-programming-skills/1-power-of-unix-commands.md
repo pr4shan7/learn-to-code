@@ -1,7 +1,7 @@
 # Commands
 
 ## 1. ps
-lists the processes running on the computer
+Lists the processes running on the computer
 
 #### Useful commandline options:
     -a : list processes of all users as well as the current user
@@ -22,7 +22,7 @@ lists the processes running on the computer
 
 
 ## 2. which
-shows the location of the command's executable file
+Shows the location of the command's executable file
 
 #### Useful commandline options:
     -a : list all instances of the command executable
@@ -38,12 +38,16 @@ shows the location of the command's executable file
 
 
 ## 3. grep
+Searches file(s) or stdin for given pattern(s)
  
 #### Useful commandline options:
+    - r : recursively search in files in subdirectories
 
 #### Tips:
+    none
 
 #### Hands-on:
+    - find all files what have the a word of your choice
 
 
 ## 4. top/htop
@@ -82,7 +86,7 @@ shows the location of the command's executable file
 #### Hands-on:
 
 
-## 8. awks 
+## 8. awk 
  
 #### Useful commandline options:
 
@@ -125,3 +129,32 @@ shows the location of the command's executable file
 #### Tips:
 
 #### Hands-on:
+
+
+## 13. taskset 
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## 14. nice
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
+## 15. tail
+ 
+#### Useful commandline options:
+
+#### Tips:
+
+#### Hands-on:
+
+
