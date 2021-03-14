@@ -59,7 +59,7 @@ Searches file(s) or stdin for given pattern(s)
 #### Hands-on:
 
 
-## 5. less
+## 5. cat
  
 #### Useful commandline options:
 
@@ -68,7 +68,8 @@ Searches file(s) or stdin for given pattern(s)
 #### Hands-on:
 
 
-## 6. watch
+
+## 6. wc
  
 #### Useful commandline options:
 
@@ -77,84 +78,5 @@ Searches file(s) or stdin for given pattern(s)
 #### Hands-on:
 
 
-## 7. cat
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 8. awk 
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 9. tee
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 10. wc
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 11. netcat/socat
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 12. cut 
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 13. taskset 
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 14. nice
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
-
-
-## 15. tail
- 
-#### Useful commandline options:
-
-#### Tips:
-
-#### Hands-on:
 
 
