@@ -51,32 +51,44 @@ Searches file(s) or stdin for given pattern(s)
 
 
 ## 4. top/htop
+Show (sorted) all (or some) the processes running on the computer
  
 #### Useful commandline options:
+    none
 
 #### Tips:
+    Install htop and preferable use it
 
 #### Hands-on:
+    - find all processes ending with letter 'd'
 
 
 ## 5. cat
+Show the content of file(s)
  
 #### Useful commandline options:
+    none
 
 #### Tips:
+    none
 
 #### Hands-on:
-
+    none
 
 
 ## 6. wc
+Count the number of words, characters or lines in the file. If no file is given, it tries reading from the input (called stdin)
  
 #### Useful commandline options:
+    - c : count the number of characters
+    - w : count the number of words
+    - l : count the number of lines
 
 #### Tips:
+    none
 
 #### Hands-on:
-
+    - make a text file and write something in it in such a way that wc -w returns a non-zero number but wc -l return 0
 
 
 
