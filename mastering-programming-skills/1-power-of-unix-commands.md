@@ -48,6 +48,12 @@ Searches file(s) or stdin for given pattern(s)
 
 #### Hands-on:
     - find all files what have the a word of your choice
+    - find count of a given word in a file; a line in the file can have many instances of the given word
+      e.g. find how many times the word 'mango' is written in grepfile.txt.
+      *** start of grepfile.txt ***
+      This manago is better than that mango.
+      That mango is not fresh.
+      *** end of grepfile.txt ***
 
 
 ## 4. top/htop
