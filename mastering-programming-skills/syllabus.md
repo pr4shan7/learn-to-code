@@ -3,6 +3,7 @@
    - explore env, cat, less, tail, head, which, wc, grep, ps,
    top/htop, watch, tee and awk commands
 
+
 ## 2-doing-magic-with-bash
 1. Variables & special variables
    - $@, $? and $$
@@ -16,19 +17,27 @@
    - rewrite the cp command the track the history
      - use the history to implement the b (back) command
 
-## 3-programming-essentials
-1. Testing python programs
-2. Writing test-friendly code
-3. Debugging your code
-   - print-based debugging
-   - using debugger
 
-## 4-story-of-processes
+## 3-story-of-processes
+1. Digging into processes from CLI
+   - ps, htop
+   - /proc file system
+   - process environment
+   - stdin, stdout, stderr & tty
+   - process memory model
+   - forking & daemonizing
+   - Context switching
+
 
 ## 5-using-power-of-signals
+1. Basics of Signals
+2. Sending & receiving signals
+3. Using signals for communication
+
 
 ## 6-networking-demystified
-
-## 7-designing-software
-
-
+1. Sockets 
+2. UDP
+3. TCP
+4. Writing client programs
+5. Writing server programs
