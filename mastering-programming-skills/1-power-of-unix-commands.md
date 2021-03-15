@@ -97,4 +97,57 @@ Count the number of words, characters or lines in the file. If no file is given,
     - make a text file and write something in it in such a way that wc -w returns a non-zero number but wc -l return 0
 
 
+## 7. watch
+Execute a command repeatedly to observe changes 
+
+#### Useful commandline options:
+    -n value: execute every value seconds
+
+#### Tips:
+    - 
+
+#### Hands-on:
+    
+
+## 8. man
+The Google that works without the internet. Shows all the information of the command, along with the options/switches.
+
+#### Useful commandline options:
+ 
+
+#### Tips:
+    - 
+
+#### Hands-on:
+    
+
+## 9. awk
+Splits the text after each space (by default)
+
+#### Useful commandline options:
+    -F : splits at each specified character
+
+#### Tips:
+    - 
+
+#### Hands-on:
+    - 
+
+## 9. tail
+Shows the end lines of the file.
+
+#### Useful commandline options:
+    -n value: shows the last value lines 
+
+#### Tips:
+    - 
+
+#### Hands-on:
+    
+
+
+
+
+
+
 
