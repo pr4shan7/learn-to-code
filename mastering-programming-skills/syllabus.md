@@ -29,13 +29,13 @@
    - Context switching
 
 
-## 5-using-power-of-signals
+## 4-using-power-of-signals
 1. Basics of Signals
 2. Sending & receiving signals
 3. Using signals for communication
 
 
-## 6-networking-demystified
+## 5-networking-demystified
 1. Sockets 
 2. UDP
 3. TCP
