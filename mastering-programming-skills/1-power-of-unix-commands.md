@@ -144,7 +144,7 @@ Shows the lines at the end of file.
 
 
 ## 11. head
-Shows lines from the begining of file (opposite of tail)
+Shows lines from the beginning of file (opposite of tail)
 
 #### Useful commandline options:
     -n value: shows the first value number of lines
