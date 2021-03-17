@@ -52,7 +52,6 @@ Searches file(s) or stdin for given pattern(s)
       That mango is not fresh.
       *** end of grepfile.txt ***
 
-
 ## 4. top/htop
 Show (sorted) all (or some) the processes running on the computer
  
@@ -68,7 +67,7 @@ Show (sorted) all (or some) the processes running on the computer
 
 ## 5. cat
 Show the content of file(s)
- 
+
 #### Useful commandline options:
     none
 
@@ -131,14 +130,79 @@ Chops columns separated by space (default)
     - get a list of pids of processes currently running
 
 ## 10. tail
-Shows the end lines of the file.
+Shows the lines at the end of file.
 
 #### Useful commandline options:
-    -n value: shows the last value lines
-    -f file: read from file
+    -n value: shows the last value number of lines
+    -f : watch (follow) changes in the file
 
 #### Tips:
-    - use tail when you are interested in most recent entries in a large file
+    - use tail when you are interested in most recent entries at the end in a large file
 
 #### Hands-on:
-    - read last 10 entries from a large file and repeatedly check if there is any update
+    - read last 5 entries from a large file and lookout for any update
+
+
+## 11. head
+Shows lines from the beginning of file (opposite of tail)
+
+#### Useful commandline options:
+    -n value: shows the first value number of lines
+
+#### Tips:
+    none
+
+#### Hands-on:
+    - read first 5 entries from a large file
+
+
+## 12. ls
+Lists all the files and folders in the current folder
+
+#### Useful commandline options:
+    -l : shows details of the list items
+
+#### Tips:
+    none
+
+#### Hands-on:
+    - check the permissions on different files and folders
+
+
+## 13. less
+Shows an interactive view of file in which we can scroll up and down
+
+#### Useful commandline options:
+    none
+
+#### Tips:
+    - less is efficient to view large files
+
+#### Hands-on:
+    - tryout viewing a large file via less
+
+
+## 14. tr
+Find and replace for each line (from stdin by default)
+
+#### Useful commandline options:
+    none
+
+#### Tips:
+    none
+
+#### Hands-on:
+    - try converting a space-separated text to a comma-separated one
+
+
+## 15. cut
+Shows specified range from each line
+
+#### Useful commandline options:
+    -c range : Range of character numbers to show
+
+#### Tips:
+    none
+
+#### Hands-on:
+    none
