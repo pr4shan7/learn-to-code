@@ -71,6 +71,7 @@ fi
 ## Custom command overwrite / implementation
 
 - We can overwrite pre-existing commands or implement our new custom commands.
+- Every bash process executes all commands in _.bashrc_ at start.
 
 ```sh
 # in .bashrc so that custom commands persist across bash instances
