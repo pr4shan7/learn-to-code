@@ -59,7 +59,6 @@
 ## Teletype Terminal (tty)
 > Todo: Read about tty in detail
   - In olden days, the server and terminals were physically distant.
-  - Due to this, speed of tranfer was less.
   - A lot of features in Linux are to reduce limitations of that time.
   - Earlier, keyboard took some time to show what we typed.
   - ECHO is used to check what was typed before sending to the  server.
@@ -89,14 +88,14 @@
 
 ### Process in Memory
   - A process is made up of three logical segments: code, data and Stack
-  - Code and data both are stored in RAM in separate segments called code segment and data segment respectively.
-  - Eg. `print("Hello")` Here print is the code and the string "Hello" is the data
-  - Arguments and return value go on the stack .
-  - Hackers use to manipulate arguments by accessing the stack. This is called stack overflow.
+    - Code and data both are stored in RAM in separate segments called code segment and data segment respectively.
+    - Eg. `print("Hello")` Here print is the code and the string "Hello" is the data
+    - Arguments and return value go on the stack .
+      - Hackers manipulate arguments by accessing the stack. This is called stack overflow.
   - All the three have attributes for security reasons. code: x, data: w , stack: w.Stack historically has x permission as well
   > dis.dis() can be used to disassociate all the instructions of a statement.
   
-py
+```py
 import os
 import time
 print("i am alone")
@@ -112,7 +111,7 @@ if pid == 0:
 else:
     print("I just gave birth to a child")
 time.sleep(25) 
-
+```
 ### Observations from the above code
 
 - Forking helps to do run process' in parallel
@@ -125,7 +124,6 @@ time.sleep(25)
 ### Killing a Child Process
 
 - If we kill the child process directly, it will still be present in the Process table of Linux.
-
 - Linux does not wipe out the child process completly until the parent specifies it by `os.wait()` 
 - The child process that are present in the process table even after dying are called Zombie or Defunked process.
-- If there are too many zombie processes, the system will crash.
+  - If there are too many zombie processes, the system will crash.
