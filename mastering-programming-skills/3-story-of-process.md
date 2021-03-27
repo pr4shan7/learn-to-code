@@ -55,3 +55,75 @@
   - They can be redirected to and from any other file on disk
     - example: `python3 run.py 0<./file1.txt 1>./file2.txt` - take stdin from file1.txt, print stdout to file2.txt
 - Good practice: prompt user before input
+
+## Teletype Terminal (tty)
+> Todo: Read about tty in detail
+  - In olden days, the server and terminals were physically distant.
+  - A lot of features in Linux are to reduce limitations of that time.
+  - Earlier, keyboard took some time to show what we typed.
+  - ECHO is used to check what was typed before sending to the  server.
+  -stdin, stdout, stderr are tty terminal.
+   > Read more about: tcgetattr tcsetattr termios
+  
+  ### Interesting features of tty
+  - `ls -l` shows some text in specific colors.
+  - `ls -l > out.txt`: No color is seen in the out.txt file
+  - This coloring is a behaviour of tty
+  - tty is a protocol, there is certain set of command,they help to print and read according to our need.
+  - tty devices and commands help to build cool things
+## Daemons
+- Daemon runs in the background, takes no terminal, is not connected to screen or keyborad.
+- If we list all process, we see that some are connected to terminal and some are not.
+- By default, all are given access to 0 1 2 but some process chose not to connect to these.
+> If we open two zsh, both have different ttys, means both are given different part of the screen to type.
+
+- We can interact with daemon using kill only
+- The ANSI color code helps to play with the tty and color using tty commands.
+
+
+## Fork in Detail
+
+- Everthing in Linux gets created by Fork
+- Forking is basically cloning. Fork will make a copy of the existing process and new pid is assigned to it.
+
+### Process in Memory
+  - A process is made up of three logical segments: code, data and Stack
+    - Code and data both are stored in RAM in separate segments called code segment and data segment respectively.
+    - Eg. `print("Hello")` Here print is the code and the string "Hello" is the data
+    - Arguments and return value go on the stack .
+      - Hackers manipulate arguments by accessing the stack. This is called stack overflow.
+  - All the three have attributes for security reasons. code: x, data: w , stack: w.Stack historically has x permission as well
+  > dis.dis() can be used to disassociate all the instructions of a statement.
+  
+```py
+import os
+import time
+print("i am alone")
+
+
+time.sleep(1)
+
+print("I am going to clone myself")
+pid = os.fork()
+
+if pid == 0:
+    print("I am the child")
+else:
+    print("I just gave birth to a child")
+time.sleep(25) 
+```
+### Observations from the above code
+
+- Forking helps to do run process' in parallel
+- After calling fork, if block is executed in the child process.The else block is executed in the parent process.
+
+> Important : The child process is the exact copy of the parent and it starts to run from the exact line where the parent was at.
+
+- The copy is a shallow copy. 
+
+### Killing a Child Process
+
+- If we kill the child process directly, it will still be present in the Process table of Linux.
+- Linux does not wipe out the child process completly until the parent specifies it by `os.wait()` 
+- The child process that are present in the process table even after dying are called Zombie or Defunked process.
+  - If there are too many zombie processes, the system will crash.
