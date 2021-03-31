@@ -72,7 +72,7 @@
   - tty is a protocol, there is certain set of command,they help to print and read according to our need.
   - tty devices and commands help to build cool things
 ## Daemons
-- Daemon runs in the background, takes no terminal, is not connected to screen or keyborad.
+- Daemon runs in the background, takes no terminal, is not connected to screen or keyboard.
 - If we list all process, we see that some are connected to terminal and some are not.
 - By default, all are given access to 0 1 2 but some process chose not to connect to these.
 > If we open two zsh, both have different ttys, means both are given different part of the screen to type.
@@ -127,3 +127,43 @@ time.sleep(25)
 - Linux does not wipe out the child process completly until the parent specifies it by `os.wait()` 
 - The child process that are present in the process table even after dying are called Zombie or Defunked process.
   - If there are too many zombie processes, the system will crash.
+
+
+## An Attempt to create a Daemon 
+
+- To create a Daemon, we need to :
+  - Create a new process(to be converted to Daemon)
+  - Disconnect it from stdin,stdout,stderr
+- But even after doing these, we observe that `ps -e`shows tty attached to this process.
+- This is because this process is connected to session leader
+  - To become a Daemon fully, we need to disconnect from the session leader
+  - This can be done by starting our own session and becoming its session leader using `os.setsid()`
+
+> A session leader is the one whose tty is used by all sessions that are forked from it. Admin is the session for bash session and any process forked from bash.
+
+```py
+import os
+import sys
+import time
+
+pid = os.fork()
+if pid > 0:
+    print("Parent going to exit")
+    exit(0)
+
+os.setsid()
+print("We are session leader")
+print(f"pid of d: {os.getpid()}")
+os.close(0)
+os.close(1)
+os.close(2)
+
+time.sleep(1000)
+
+```
+- This code helps to observe the behaviour of the child process
+- We can observe that now `ps -e` gives ? in the tty column for this process
+
+> _Tip: This Daemon might still be able to access 0,1 or 2 rarely. To avoid it completely, fork once again and then make that grandchild the Daemon._
+
+
