@@ -10,8 +10,6 @@
  - This is called Signal Masking
  - SIGKILL is the only signal that can not be masked.
 
- >Fact: Kill command uses SIGKILL. 
-
  ## Some signals:
  
 - SIGINT: interupt
