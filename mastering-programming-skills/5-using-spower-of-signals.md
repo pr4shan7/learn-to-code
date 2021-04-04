@@ -10,6 +10,8 @@
  - This is called Signal Masking
  - SIGKILL is the only signal that can not be masked.
 
+ > Fact: Kill command can be used to send any signal not only SIGKILL.
+
  ## Some signals:
  
 - SIGINT: interupt
